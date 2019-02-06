@@ -1,0 +1,22 @@
+<h1 class="yal">Season Anime</h1>
+
+<p *ngIf="!anime"><em>Loading...</em></p>
+
+<table class='yal' *ngIf="anime">
+  <thead>
+  <tr>
+    <th style="text-align: center;">Title</th>
+    <th>Episodes</th>
+    <th>Score</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of anime">
+      <td class="thumbnail"><span><img src="{{a.image_url}}" /></span><a href="{{a.url}}">{{a.title}}</a></td>
+      <td>{{a.episodes}}</td>
+      <td>{{a.score}}</td>
+      <td>{{a.synopsis}}</td>
+    </tr>
+  </tbody>
+</table>

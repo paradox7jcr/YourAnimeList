@@ -1,0 +1,24 @@
+<h1 class="yal">All Time Top Anime</h1>
+<div><img src="../../assets/anime_banner.png" style="width: 100%;"/></div>
+
+
+<p *ngIf="!topAnime"><em>Loading...</em></p>
+
+<table class='yal' *ngIf="topAnime">
+  <thead>
+  <tr>
+    <th style="text-align: center;">Title</th>
+    <th>Rank</th>
+    <th>Score</th>
+    <th>Release Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of topAnime">
+    <td class ="thumbnail"><span><img src="{{a.image_url}}" /></span><a href="{{a.url}}">{{a.title}}</a></td>
+    <td>{{ a.rank }}</td>
+    <td>{{ a.score }}</td>
+    <td>{{ a.start_date }}</td>
+  </tr>
+  </tbody>
+</table>

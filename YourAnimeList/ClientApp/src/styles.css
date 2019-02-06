@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+h1.yal {
+  text-align: center;
+  color: yellow;
+  background-color: #2E4057;
+  border: 5px solid #2E4057;
+  border-radius: 10px;
+}
+table.yal {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+table.yal th {
+  background-color: #2E4057;
+  color: white;
+  padding: 8px;
+  border: 1px solid white;
+}
+table.yal tr {
+  background-color: #048BA8;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  height: 35px;
+}
+table.yal td {
+  background-color: #048ba8;
+  border: 1px solid white;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+table.yal td.thumbnail {
+  position: relative;
+  padding: 25px;
+  border: 1px solid #048ba8;
+  border-radius: 5px;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+}
+.thumbnail span {
+  position: absolute;
+  background-color: transparent;
+  left: -1000px;
+  visibility: hidden;
+  margin: 0;
+}
+.thumbnail:hover span {
+  visibility: visible;
+  left: 300px;
+  z-index: 50;
+}
+td a {
+  color: yellow;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  overflow: auto;
+}
